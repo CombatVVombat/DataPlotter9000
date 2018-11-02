@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DataPlotter9000" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DataPlotter9000" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+					<Add directory="../Libraries/Source/SFML-2.3.1/include" />
+					<Add directory="../Libraries/Source/TGUI-0.8-alpha/include" />
+				</Compiler>
+				<Linker>
+					<Add library="../Libraries/Build/SFML-2.3.1/lib/libsfml-graphics-d.a" />
+					<Add library="../Libraries/Build/SFML-2.3.1/lib/libsfml-window-d.a" />
+					<Add library="../Libraries/Build/SFML-2.3.1/lib/libsfml-system-d.a" />
+					<Add library="../Libraries/Build/TGUI-0.8-alpha/lib/libtgui-d.a" />
+					<Add directory="../Libraries/Build/SFML-2.3.1/lib" />
+					<Add directory="../Libraries/Build/TGUI-0.8-alpha/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DataPlotter9000" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../Libraries/Source/SFML-2.3.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../Libraries/Build/SFML-2.3.1/lib/libsfml-graphics.a" />
+					<Add library="../Libraries/Build/SFML-2.3.1/lib/libsfml-window.a" />
+					<Add library="../Libraries/Build/SFML-2.3.1/lib/libsfml-system.a" />
+					<Add directory="../Libraries/Build/SFML-2.3.1/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Source/accumulator.cpp" />
+		<Unit filename="Source/accumulator.hpp" />
+		<Unit filename="Source/application.cpp" />
+		<Unit filename="Source/application.hpp" />
+		<Unit filename="Source/componentstore.hpp" />
+		<Unit filename="Source/engine.cpp" />
+		<Unit filename="Source/engine.hpp" />
+		<Unit filename="Source/entity.cpp" />
+		<Unit filename="Source/entity.hpp" />
+		<Unit filename="Source/entityid.hpp" />
+		<Unit filename="Source/graphics/irenderable.cpp" />
+		<Unit filename="Source/graphics/irenderable.hpp" />
+		<Unit filename="Source/graphics/renderer.cpp" />
+		<Unit filename="Source/graphics/renderer.hpp" />
+		<Unit filename="Source/graphics/transform/node.cpp" />
+		<Unit filename="Source/graphics/transform/node.hpp" />
+		<Unit filename="Source/idgenerator.cpp" />
+		<Unit filename="Source/idgenerator.hpp" />
+		<Unit filename="Source/main.cpp" />
+		<Unit filename="Source/plot.cpp" />
+		<Unit filename="Source/plot.hpp" />
+		<Unit filename="Source/plot/axis.cpp" />
+		<Unit filename="Source/plot/axis.hpp" />
+		<Unit filename="Source/plot/canvas.cpp" />
+		<Unit filename="Source/plot/canvas.hpp" />
+		<Unit filename="Source/plot/margin.hpp" />
+		<Unit filename="Source/sampledata.cpp" />
+		<Unit filename="Source/sampledata.hpp" />
+		<Unit filename="Source/serialdialog.cpp" />
+		<Unit filename="Source/serialdialog.hpp" />
+		<Unit filename="Source/serialdialogcontroller.cpp" />
+		<Unit filename="Source/serialdialogcontroller.hpp" />
+		<Unit filename="Source/serialport.cpp" />
+		<Unit filename="Source/serialport.hpp" />
+		<Unit filename="Source/statusdialog.cpp" />
+		<Unit filename="Source/statusdialog.hpp" />
+		<Unit filename="Source/statusdialogcontroller.cpp" />
+		<Unit filename="Source/statusdialogcontroller.hpp" />
+		<Unit filename="Source/timer.cpp" />
+		<Unit filename="Source/timer.hpp" />
+		<Unit filename="Source/vectormath.cpp" />
+		<Unit filename="Source/vectormath.hpp" />
+		<Unit filename="Source/window.cpp" />
+		<Unit filename="Source/window.hpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
